@@ -1,11 +1,20 @@
-/**
- * Created by ravinderk on 7/22/2016.
- */
-public class Node {
-    int i ;
-    Node next;
+package com.ood.di;
 
-    public Node(int i) {
-        this.i = i;
+/**
+ * Created by ravinderk on 6/8/2017.
+ */
+public class Node
+{
+    public int data;
+    public Node left, right, nextRight;
+
+    public Node(int item)
+    {
+        data = item;
+        left = right = nextRight = null;
     }
+}
+
+class NodeHolder {
+    Node node;
 }
